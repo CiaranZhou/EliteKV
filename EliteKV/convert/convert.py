@@ -1,3 +1,12 @@
+'''
+python convert/convert.py \
+    --model_path path/to/your/model \
+    --pe_mode EliteKV \
+    --half_of_rope_dim 4 \
+    --kv_dim 960 \
+    --save_dir convert/model
+'''
+
 import os
 from tqdm import tqdm
 
