@@ -1,3 +1,8 @@
+'''
+python RoPElite/rank_0.py \
+        --model_path path/to/your/model \
+        --save_dir RoPElite/rank
+'''
 import argparse
 import torch
 from transformers import AutoConfig
@@ -24,7 +29,7 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model_path", type=str, default="/data1/ssr/model/Llama-2-7b-hf")
+    parser.add_argument("--model_path", type=str, default="path/to/your/model")
     parser.add_argument("--save_dir", type=str, default="RoPElite/rank")
     args = parser.parse_args()
     main(args)

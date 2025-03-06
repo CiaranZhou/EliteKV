@@ -1,11 +1,13 @@
 """
---model_path "/data1/ssr/model/Llama-2-7b-hf"
---task default (Contribution RoPElite)
---data_path 
---data_length 2048
---eval_iters 2000
---fixed_dim_num 1
---rank_file "/data1/ssr/MLA/pe/result/RopeDim/rank/RopeDimPreserve_layer_head.pkl"
+python RoPElite/cal_attn_distance.py
+    --model_path path/to/your/model
+    --task RoPElite (Contribution RoPElite)
+    --data_path path/to/your/data
+    --data_length 2048
+    --eval_iters 2000
+    --fixed_dim_num 0
+    --rank_file "RoPElite/rank/RoPElite_0.pkl"
+    --save_dir "RoPElite/result"
 """
 import argparse
 import torch
@@ -94,10 +96,9 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    # add_model_args(parser)
-    parser.add_argument("--model_path", type=str, default="/data1/ssr/model/Llama-2-7b-hf")
+    parser.add_argument("--model_path", type=str, default="path/to/your/model")
     parser.add_argument("--task", type=str, default="RoPElite")
-    parser.add_argument("--data_path", type=str, default="/data1/ssr/LLaMA-Factory/data/refinedweb_parquet/3.parquet")
+    parser.add_argument("--data_path", type=str, default="path/to/your/data")
     parser.add_argument("--data_length", type=int, default=2048)
     parser.add_argument("--eval_iters", type=int, default=2000)
     parser.add_argument("--fixed_dim_num", type=int, default=0)

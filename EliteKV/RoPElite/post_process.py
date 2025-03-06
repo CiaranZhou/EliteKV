@@ -1,4 +1,8 @@
-# rope_dim
+'''
+python RoPElite/post_process.py \
+    --file_path  RoPElite/result/model_name/RoPElite_$fix.pkl \
+    --save_dir RoPElite/rank
+'''
 import pickle
 import torch
 import argparse
