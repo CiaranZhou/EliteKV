@@ -33,6 +33,7 @@ bash RoPElite/cal_then_rank.sh
 ```bash
 python dimension_allocation/allocation_ppl.py \
     --model_path path/to/your/model \
+    --data_path path/to/your/data \
     --file_path RoPElite/rank/RoPElite_1.pkl \
     --start 1 \
     --end 32 \
