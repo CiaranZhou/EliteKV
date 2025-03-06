@@ -1,5 +1,5 @@
 # EliteKV
-[EliteKV: Scalable KV Cache Compression via RoPE Frequency Selection and Joint Low-Rank Projection](https://arxiv.org/abs/2503.01586)
+【paper】[EliteKV: Scalable KV Cache Compression via RoPE Frequency Selection and Joint Low-Rank Projection](https://arxiv.org/abs/2503.01586)
 
 ### Dataset
 [RefinedWeb](https://huggingface.co/datasets/tiiuae/falcon-refinedweb)
@@ -36,7 +36,7 @@ python convert/convert.py \
     --save_dir convert/model
 ```
 
-## 🤝 Acknowledgements
+## Acknowledgements
 
 Some code in this project is cited and modified from [transformers](https://github.com/huggingface/transformers).
 
