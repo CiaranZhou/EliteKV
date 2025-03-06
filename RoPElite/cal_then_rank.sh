@@ -7,6 +7,7 @@ if [ "$fix" -eq 0 ]; then
 fi
 python RoPElite/cal_attn_distance.py \
     --model_path path/to/your/model \
+    --data_path path/to/your/data \
     --task RoPElite \
     --fixed_dim_num $fix \
     --eval_iters 2000 \
