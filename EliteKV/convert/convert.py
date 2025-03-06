@@ -2,8 +2,8 @@
 python convert/convert.py \
     --model_path path/to/your/model \
     --pe_mode EliteKV \
-    --half_of_rope_dim 4 \
-    --kv_dim 960 \
+    --half_of_rope_dim 12 \
+    --kv_dim 2048 \
     --save_dir convert/model
 '''
 
@@ -155,10 +155,10 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model_path", type=str, default="/data1/ssr/model/Llama-2-7b-hf")
+    parser.add_argument("--model_path", type=str, default="path/to/your/model")
     parser.add_argument("--pe_mode", type=str, default="EliteKV")
-    parser.add_argument("--half_of_rope_dim", type=int, default=4)
-    parser.add_argument("--kv_dim", type=int, default=960)
+    parser.add_argument("--half_of_rope_dim", type=int, default=12)
+    parser.add_argument("--kv_dim", type=int, default=2048)
     parser.add_argument("--save_dir", type=str, default="convert/model")
     args = parser.parse_args()
     main(args)
