@@ -1,7 +1,7 @@
 # EliteKV
 【paper】[EliteKV: Scalable KV Cache Compression via RoPE Frequency Selection and Joint Low-Rank Projection](https://arxiv.org/abs/2503.01586)
 
-  🚧 Work in Progress 🚧*
+🚧 *Work in Progress* 🚧
 This repository is under active development. Feedback are welcome! More updates coming soon—stay tuned! 
 
 ---
